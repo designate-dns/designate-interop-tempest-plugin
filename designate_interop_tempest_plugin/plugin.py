@@ -17,10 +17,10 @@ import os
 from tempest import config
 from tempest.test_discover import plugins
 
-from designate_tempest_plugin import config as project_config
+from designate_interop_tempest_plugin import config as project_config
 
 
-class DesignateTempestPlugin(plugins.TempestPlugin):
+class DesignateInterOpTempestPlugin(plugins.TempestPlugin):
     """
     A DesignateTempestPlugin class provides the basic hooks for an external
     plugin to provide tempest the necessary information to run the plugin.
@@ -36,7 +36,7 @@ class DesignateTempestPlugin(plugins.TempestPlugin):
         """
         base_path = os.path.split(os.path.dirname(
             os.path.abspath(__file__)))[0]
-        test_dir = "designate_tempest_plugin/tests"
+        test_dir = "designate_interop_tempest_plugin/tests"
         full_test_dir = os.path.join(base_path, test_dir)
         return full_test_dir, base_path
 
@@ -80,13 +80,13 @@ class DesignateTempestPlugin(plugins.TempestPlugin):
         admin_params = {
             'name': 'dns_admin',
             'service_version': 'dns.admin',
-            'module_path': 'designate_tempest_plugin.services.dns.admin',
+            'module_path': 'designate_interop_tempest_plugin.services.dns.admin',
             'client_names': ['QuotasClient']
         }
         v2_params = {
             'name': 'dns_v2',
             'service_version': 'dns.v2',
-            'module_path': 'designate_tempest_plugin.services.dns.v2',
+            'module_path': 'designate_interop_tempest_plugin.services.dns.v2',
             'client_names': ['BlacklistsClient', 'PoolClient', 'QuotasClient',
                              'RecordsetClient', 'TldClient',
                              'TransferAcceptClient', 'TransferRequestClient',

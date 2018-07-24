@@ -12,11 +12,11 @@
 # License for the specific language governing permissions and limitations under
 # the License.
 
-from designate_tempest_plugin.services.dns.v1.json.domains_client import \
+from designate_interop_tempest_plugin.services.dns.v1.json.domains_client import \
     DomainsClient
-from designate_tempest_plugin.services.dns.v1.json.records_client import \
+from designate_interop_tempest_plugin.services.dns.v1.json.records_client import \
     RecordsClient
-from designate_tempest_plugin.services.dns.v1.json.servers_client import \
+from designate_interop_tempest_plugin.services.dns.v1.json.servers_client import \
     ServersClient
 
 __all__ = ['DomainsClient', 'RecordsClient', 'ServersClient']

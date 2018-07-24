@@ -11,7 +11,7 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations
 # under the License.
-from designate_tempest_plugin.services.dns.json import base
+from designate_interop_tempest_plugin.services.dns.json import base
 
 handle_errors = base.handle_errors
 

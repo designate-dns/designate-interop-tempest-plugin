@@ -12,8 +12,8 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from designate_tempest_plugin import data_utils as dns_data_utils
-from designate_tempest_plugin.services.dns.admin.json import base
+from designate_interop_tempest_plugin import data_utils as dns_data_utils
+from designate_interop_tempest_plugin.services.dns.admin.json import base
 
 
 class QuotasClient(base.DnsClientAdminBase):

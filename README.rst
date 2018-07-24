@@ -7,12 +7,12 @@ Team and repository tags
 
 .. Change things from this point on
 
-================================
-Tempest Integration of Designate
-================================
+====================================================
+Tempest Integration of Designate for InterOp Testing
+====================================================
 
-This directory contains Tempest tests to cover the designate project, as well
-as a plugin to automatically load these tests into tempest.
+This directory contains Tempest tests to cover the designate project's InterOp 
+tests, as well as a plugin to automatically load these tests into tempest.
 
 See the tempest plugin docs for information on using it:
 https://docs.openstack.org/tempest/latest/plugin.html#using-plugins
